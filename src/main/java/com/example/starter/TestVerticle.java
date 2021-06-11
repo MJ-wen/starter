@@ -14,7 +14,7 @@ public class TestVerticle extends AbstractVerticle {
     }).listen(8888, http -> {
       if (http.succeeded()) {
         startPromise.complete();
-        System.out.println("TEST HTTP server started on port 8888");
+        System.out.println("TEST HTTP server started on port 8888   -2");
       } else {
         startPromise.fail(http.cause());
       }
